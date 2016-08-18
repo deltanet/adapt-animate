@@ -1,0 +1,134 @@
+// Applied to course.json
+"_animate": {
+    "_isEnabled": true,
+    "_globalTitle": {
+        "_isEnabled": true,
+        "_effect": "fadeIn"
+    },
+    "_globalBody": {
+        "_isEnabled": true,
+        "_effect": "fadeIn"
+    },
+    "_globalInstruction": {
+        "_isEnabled": true,
+        "_effect": "fadeIn"
+    },
+    "_globalArticle": {
+        "_isEnabled": true,
+        "_effect": "fadeIn"
+    },
+    "_globalBlock": {
+        "_isEnabled": true,
+        "_effect": "fadeIn"
+    },
+    "_globalComponent": {
+        "_isEnabled": true,
+        "_effect": "fadeIn"
+    }
+},
+
+// Applied to Articles, Blocks or components.json
+"_animate": {
+    "_isEnabled": false,
+    "_completeElement": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_title": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_body": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_instruction": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_custom": {
+      "_isEnabled": false,
+      "_element": "",
+      "_effect": ""
+    }
+},
+
+// Effects are:
+
+// https://daneden.github.io/animate.css/
+
+// bounce
+// flash
+// pulse
+// rubberBand
+// shake
+// headShake
+// swing
+// tada
+// wobble
+// jello
+// bounceIn
+// bounceInDown
+// bounceInLeft
+// bounceInRight
+// bounceInUp
+// bounceOut
+// bounceOutDown
+// bounceOutLeft
+// bounceOutRight
+// bounceOutUp
+// fadeIn
+// fadeInDown
+// fadeInDownBig
+// fadeInLeft
+// fadeInLeftBig
+// fadeInRight
+// fadeInRightBig
+// fadeInUp
+// fadeInUpBig
+// fadeOut
+// fadeOutDown
+// fadeOutDownBig
+// fadeOutLeft
+// fadeOutLeftBig
+// fadeOutRight
+// fadeOutRightBig
+// fadeOutUp
+// fadeOutUpBig
+// flipInX
+// flipInY
+// flipOutX
+// flipOutY
+// lightSpeedIn
+// lightSpeedOut
+// rotateIn
+// rotateInDownLeft
+// rotateInDownRight
+// rotateInUpLeft
+// rotateInUpRight
+// rotateOut
+// rotateOutDownLeft
+// rotateOutDownRight
+// rotateOutUpLeft
+// rotateOutUpRight
+// hinge
+// rollIn
+// rollOut
+// zoomIn
+// zoomInDown
+// zoomInLeft
+// zoomInRight
+// zoomInUp
+// zoomOut
+// zoomOutDown
+// zoomOutLeft
+// zoomOutRight
+// zoomOutUp
+// slideInDown
+// slideInLeft
+// slideInRight
+// slideInUp
+// slideOutDown
+// slideOutLeft
+// slideOutRight
+// slideOutUp

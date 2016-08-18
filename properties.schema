@@ -1,0 +1,635 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties":{
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object",
+          "properties":{
+            "_animate": {
+              "type":"object",
+              "required":false,
+              "legend": "Animate",
+              "properties":{
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":false,
+                  "default": false,
+                  "title": "Animate Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Enables Animate Extension"
+                },
+                "_globalTitle": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate all Title Text",
+                  "help": "Animate all article, block and component titles",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate all Title Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_globalBody": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate all Body Text",
+                  "help": "Animate all article, block and component body text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate all Body Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_globalInstruction": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate all Instruction Text",
+                  "help": "Animate all article, block and component instruction text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate all Instruction Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_globalArticle": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate all Articles",
+                  "help": "Animate all articles",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate all Articles Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_globalBlock": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate all Blocks",
+                  "help": "Animate all blocks",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate all Blocks Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_globalComponent": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate all Components",
+                  "help": "Animate all component",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate all Components Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object",
+          "properties":{
+            "_animate": {
+              "type":"object",
+              "required":false,
+              "legend": "Animate",
+              "properties":{
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":false,
+                  "default": false,
+                  "title": "Animate Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Enables Animate Extension"
+                },
+                "_completeElement": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Article",
+                  "help": "Animate the article",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Article Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_title": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Article Title",
+                  "help": "Animate the article title",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Article Title Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_body": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate the Article Body Text",
+                  "help": "Animate the article body text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Article Body Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_instruction": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Article Instruction Text",
+                  "help": "Animate the article instruction text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Article Instruction Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_custom": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Custom Element",
+                  "help": "Animate a specified element within the article",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": false,
+                      "title": "Animate Custom Element Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_element": {
+                      "type": "string",
+                      "required": true,
+                      "default": "",
+                      "title": "Element",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Specify an element by naming the div class"
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "block": {
+          "type":"object",
+          "properties":{
+            "_animate": {
+              "type":"object",
+              "required":false,
+              "legend": "Animate",
+              "properties":{
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":false,
+                  "default": false,
+                  "title": "Animate Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Enables Animate Extension"
+                },
+                "_completeElement": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Block",
+                  "help": "Animate the block",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Block Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_title": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Block Title",
+                  "help": "Animate the block title",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Block Title Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_body": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate the Block Body Text",
+                  "help": "Animate the block body text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Block Body Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_instruction": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Block Instruction Text",
+                  "help": "Animate the block instruction text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Block Instruction Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_custom": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Custom Element",
+                  "help": "Animate a specified element within the block",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": false,
+                      "title": "Animate Custom Element Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_element": {
+                      "type": "string",
+                      "required": true,
+                      "default": "",
+                      "title": "Element",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Specify an element by naming the div class"
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "component": {
+          "type":"object",
+          "properties":{
+            "_animate": {
+              "type":"object",
+              "required":false,
+              "legend": "Animate",
+              "properties":{
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":false,
+                  "default": false,
+                  "title": "Animate Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Enables Animate Extension"
+                },
+                "_completeElement": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Component",
+                  "help": "Animate the component",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Component Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_title": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Component Title",
+                  "help": "Animate the component title",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Component Title Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_body": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate the Component Body Text",
+                  "help": "Animate the component body text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Component Body Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_instruction": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Component Instruction Text",
+                  "help": "Animate the component instruction text",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": true,
+                      "title": "Animate Component Instruction Text Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                },
+                "_custom": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Animate Custom Element",
+                  "help": "Animate a specified element within the component",
+                  "properties":{
+                    "_isEnabled": {
+                      "type":"boolean",
+                      "required":true,
+                      "default": false,
+                      "title": "Animate Custom Element Enabled",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "_element": {
+                      "type": "string",
+                      "required": true,
+                      "default": "",
+                      "title": "Element",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Specify an element by naming the div class"
+                    },
+                    "_effect": {
+                      "type": "string",
+                      "required": true,
+                      "default": "fadeIn",
+                      "title": "Effect",
+                      "inputType": "Text",
+                      "validators": []
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
