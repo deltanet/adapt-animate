@@ -29,10 +29,13 @@ define(function(require) {
             $(this.modelID).addClass("animate");
 
             // Complete element
-            // Check for global config first
-            if(Adapt.animate.animateComponentEnabled) {
+            // Check for global config first and set var accordingly
+            if (Adapt.course.get("_animate")._component._completeElement._isEnabled) {
               this.completeElementEnabled = true;
-              this.completeElementEffect = Adapt.course.get("_animate")._globalComponent._effect;
+            }
+            // Check var against component view config
+            if(this.completeElementEnabled) {
+              this.completeElementEffect = Adapt.course.get("_animate")._component._completeElement._effect;
               $(this.modelID).addClass("animated");
               $(this.modelID).addClass("element-hidden");
             } else if(this.model.has("_animate")._completeElement) {
@@ -45,10 +48,13 @@ define(function(require) {
             }
 
             // Title
-            // Check for global config first
-            if(Adapt.animate.animateTitleEnabled) {
+            // Check for global config first and set var accordingly
+            if (Adapt.course.get("_animate")._component._title._isEnabled) {
               this.titleEnabled = true;
-              this.titleEffect = Adapt.course.get("_animate")._globalTitle._effect;
+            }
+            // Check var against component view config
+            if(this.titleEnabled) {
+              this.titleEffect = Adapt.course.get("_animate")._component._title._effect;
               $(this.modelID).find(".component-title-inner").addClass("animated");
               $(this.modelID).find(".component-title-inner").addClass("element-hidden");
             } else if(this.model.has("_animate")._title) {
@@ -61,10 +67,13 @@ define(function(require) {
             }
 
             // Body
-            // Check for global config first
-            if(Adapt.animate.animateBodyEnabled) {
+            // Check for global config first and set var accordingly
+            if (Adapt.course.get("_animate")._component._body._isEnabled) {
               this.bodyEnabled = true;
-              this.bodyEffect = Adapt.course.get("_animate")._globalBody._effect;
+            }
+            // Check var against component view config
+            if(this.bodyEnabled) {
+              this.bodyEffect = Adapt.course.get("_animate")._component._body._effect;
               $(this.modelID).find(".component-body-inner").addClass("animated");
               $(this.modelID).find(".component-body-inner").addClass("element-hidden");
             } else if (this.model.has("_animate")._body) {
@@ -77,10 +86,13 @@ define(function(require) {
             }
 
             // Instruction
-            // Check for global config first
-            if(Adapt.animate.animateInstructionEnabled) {
+            // Check for global config first and set var accordingly
+            if (Adapt.course.get("_animate")._component._instruction._isEnabled) {
               this.instructionEnabled = true;
-              this.instructionEffect = Adapt.course.get("_animate")._globalInstruction._effect;
+            }
+            // Check var against component view config
+            if(this.instructionEnabled) {
+              this.instructionEffect = Adapt.course.get("_animate")._component._instruction._effect;
               $(this.modelID).find(".component-instruction-inner").addClass("animated");
               $(this.modelID).find(".component-instruction-inner").addClass("element-hidden");
             } else if (this.model.has("_animate")._instruction) {
@@ -93,7 +105,17 @@ define(function(require) {
             }
 
             // Custom
-            if(this.model.has("_animate")._custom) {
+            // Check for global config first and set var accordingly
+            if (Adapt.course.get("_animate")._component._custom._isEnabled) {
+              this.customEnabled = true;
+            }
+            // Check var against component view config
+            if(this.customEnabled) {
+              this.customElement = Adapt.course.get("_animate")._component._custom._element;
+              this.customEffect = Adapt.course.get("_animate")._component._custom._effect;
+              $(this.modelID).find('.'+this.customElement).addClass("animated");
+              $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+            } else if (this.model.has("_animate")._custom) {
               if(this.model.get("_animate")._custom._isEnabled) {
                 this.customEnabled = true;
                 this.customElement = this.model.get("_animate")._custom._element;

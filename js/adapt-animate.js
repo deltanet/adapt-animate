@@ -33,39 +33,21 @@ define([
           this.animateEnabled = false;
         }
         // Check for global config
-        // Titles
-        if (this.animateEnabled && Adapt.course.get("_animate")._globalTitle._isEnabled) {
-          Adapt.animate.animateTitleEnabled = Adapt.course.get("_animate")._globalTitle._isEnabled;
-        } else {
-          Adapt.animate.animateTitleEnabled = false;
-        }
-        // Body
-        if (this.animateEnabled && Adapt.course.get("_animate")._globalBody._isEnabled) {
-          Adapt.animate.animateBodyEnabled = Adapt.course.get("_animate")._globalBody._isEnabled;
-        } else {
-          Adapt.animate.animateBodyEnabled = false;
-        }
-        // Instruction
-        if (this.animateEnabled && Adapt.course.get("_animate")._globalInstruction._isEnabled) {
-          Adapt.animate.animateInstructionEnabled = Adapt.course.get("_animate")._globalInstruction._isEnabled;
-        } else {
-          Adapt.animate.animateInstructionEnabled = false;
-        }
         // Article
-        if (this.animateEnabled && Adapt.course.get("_animate")._globalArticle._isEnabled) {
-          Adapt.animate.animateArticleEnabled = Adapt.course.get("_animate")._globalArticle._isEnabled;
+        if (this.animateEnabled && Adapt.course.get("_animate")._article._isEnabled) {
+          Adapt.animate.animateArticleEnabled = Adapt.course.get("_animate")._article._isEnabled;
         } else {
           Adapt.animate.animateArticleEnabled = false;
         }
         // Block
-        if (this.animateEnabled && Adapt.course.get("_animate")._globalBlock._isEnabled) {
-          Adapt.animate.animateBlockEnabled = Adapt.course.get("_animate")._globalBlock._isEnabled;
+        if (this.animateEnabled && Adapt.course.get("_animate")._block._isEnabled) {
+          Adapt.animate.animateBlockEnabled = Adapt.course.get("_animate")._block._isEnabled;
         } else {
           Adapt.animate.animateBlockEnabled = false;
         }
         // Component
-        if (this.animateEnabled && Adapt.course.get("_animate")._globalComponent._isEnabled) {
-          Adapt.animate.animateComponentEnabled = Adapt.course.get("_animate")._globalComponent._isEnabled;
+        if (this.animateEnabled && Adapt.course.get("_animate")._component._isEnabled) {
+          Adapt.animate.animateComponentEnabled = Adapt.course.get("_animate")._component._isEnabled;
         } else {
           Adapt.animate.animateComponentEnabled = false;
         }
@@ -73,6 +55,7 @@ define([
       },
 
       onArticleReady: function(view) {
+        // Check for global first
         if (this.animateEnabled && view.model && Adapt.animate.animateArticleEnabled) {
           new AnimateArticleView({model:view.model});
         } else if (this.animateEnabled && view.model && view.model.get("_animate") && view.model.get("_animate")._isEnabled){
@@ -81,6 +64,7 @@ define([
       },
 
       onBlockReady: function(view) {
+        // Check for global first
         if (this.animateEnabled && view.model && Adapt.animate.animateBlockEnabled) {
           new AnimateBlockView({model:view.model});
         } else if (this.animateEnabled && view.model && view.model.get("_animate") && view.model.get("_animate")._isEnabled){
@@ -89,6 +73,7 @@ define([
       },
 
       onComponentReady: function(view) {
+        // Check for global first
         if (this.animateEnabled && view.model && Adapt.animate.animateComponentEnabled) {
           new AnimateComponentView({model:view.model});
         } else if (this.animateEnabled && view.model && view.model.get("_animate") && view.model.get("_animate")._isEnabled){

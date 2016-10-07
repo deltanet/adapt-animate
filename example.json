@@ -1,33 +1,95 @@
 // Applied to course.json
 "_animate": {
     "_isEnabled": true,
-    "_globalTitle": {
+    "_article": {
         "_isEnabled": true,
-        "_effect": "fadeIn"
+        "_title": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_body": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_instruction": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_custom": {
+            "_isEnabled": false,
+            "_element": "",
+            "_effect": ""
+        }
     },
-    "_globalBody": {
+    "_block": {
         "_isEnabled": true,
-        "_effect": "fadeIn"
+        "_title": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_body": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_instruction": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_custom": {
+            "_isEnabled": false,
+            "_element": "",
+            "_effect": ""
+        }
     },
-    "_globalInstruction": {
+    "_component": {
         "_isEnabled": true,
-        "_effect": "fadeIn"
-    },
-    "_globalArticle": {
-        "_isEnabled": true,
-        "_effect": "fadeIn"
-    },
-    "_globalBlock": {
-        "_isEnabled": true,
-        "_effect": "fadeIn"
-    },
-    "_globalComponent": {
-        "_isEnabled": true,
-        "_effect": "fadeIn"
+        "_completeElement": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_title": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_body": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_instruction": {
+            "_isEnabled": true,
+            "_effect": "fadeIn"
+        },
+        "_custom": {
+            "_isEnabled": false,
+            "_element": "",
+            "_effect": ""
+        }
     }
 },
 
-// Applied to Articles, Blocks or components.json
+// Applied to Articles or Blocks.json
+"_animate": {
+    "_isEnabled": false,
+    "_title": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_body": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_instruction": {
+      "_isEnabled": false,
+      "_effect": ""
+    },
+    "_custom": {
+      "_isEnabled": false,
+      "_element": "",
+      "_effect": ""
+    }
+},
+
+// Applied to components.json
 "_animate": {
     "_isEnabled": false,
     "_completeElement": {
