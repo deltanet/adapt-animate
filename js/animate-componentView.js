@@ -32,14 +32,13 @@ define(function(require) {
             // Check for global config first and set var accordingly
             if (Adapt.course.get("_animate")._component._completeElement._isEnabled) {
               this.completeElementEnabled = true;
-            }
-            // Check var against component view config
-            if(this.completeElementEnabled) {
               this.completeElementEffect = Adapt.course.get("_animate")._component._completeElement._effect;
               $(this.modelID).addClass("animated");
               $(this.modelID).addClass("element-hidden");
-            } else if(this.model.has("_animate")._completeElement) {
-              if(this.model.get("_animate")._completeElement._isEnabled) {
+            }
+            // Check var against component view config
+            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
+              if (this.model.get("_animate")._completeElement._isEnabled) {
                 this.completeElementEnabled = true;
                 this.completeElementEffect = this.model.get("_animate")._completeElement._effect;
                 $(this.modelID).addClass("animated");
@@ -51,14 +50,13 @@ define(function(require) {
             // Check for global config first and set var accordingly
             if (Adapt.course.get("_animate")._component._title._isEnabled) {
               this.titleEnabled = true;
-            }
-            // Check var against component view config
-            if(this.titleEnabled) {
               this.titleEffect = Adapt.course.get("_animate")._component._title._effect;
               $(this.modelID).find(".component-title-inner").addClass("animated");
               $(this.modelID).find(".component-title-inner").addClass("element-hidden");
-            } else if(this.model.has("_animate")._title) {
-              if(this.model.get("_animate")._title._isEnabled) {
+            }
+            // Check var against component view config
+            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
+              if (this.model.get("_animate")._title._isEnabled) {
                 this.titleEnabled = true;
                 this.titleEffect = this.model.get("_animate")._title._effect;
                 $(this.modelID).find(".component-title-inner").addClass("animated");
@@ -70,13 +68,12 @@ define(function(require) {
             // Check for global config first and set var accordingly
             if (Adapt.course.get("_animate")._component._body._isEnabled) {
               this.bodyEnabled = true;
-            }
-            // Check var against component view config
-            if(this.bodyEnabled) {
               this.bodyEffect = Adapt.course.get("_animate")._component._body._effect;
               $(this.modelID).find(".component-body-inner").addClass("animated");
               $(this.modelID).find(".component-body-inner").addClass("element-hidden");
-            } else if (this.model.has("_animate")._body) {
+            }
+            // Check var against component view config
+            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
               if (this.model.get("_animate")._body._isEnabled) {
                 this.bodyEnabled = true;
                 this.bodyEffect = this.model.get("_animate")._body._effect;
@@ -89,13 +86,12 @@ define(function(require) {
             // Check for global config first and set var accordingly
             if (Adapt.course.get("_animate")._component._instruction._isEnabled) {
               this.instructionEnabled = true;
-            }
-            // Check var against component view config
-            if(this.instructionEnabled) {
               this.instructionEffect = Adapt.course.get("_animate")._component._instruction._effect;
               $(this.modelID).find(".component-instruction-inner").addClass("animated");
               $(this.modelID).find(".component-instruction-inner").addClass("element-hidden");
-            } else if (this.model.has("_animate")._instruction) {
+            }
+            // Check var against component view config
+            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
               if (this.model.get("_animate")._instruction._isEnabled) {
                 this.instructionEnabled = true;
                 this.instructionEffect = this.model.get("_animate")._instruction._effect;
@@ -108,15 +104,14 @@ define(function(require) {
             // Check for global config first and set var accordingly
             if (Adapt.course.get("_animate")._component._custom._isEnabled) {
               this.customEnabled = true;
-            }
-            // Check var against component view config
-            if(this.customEnabled) {
               this.customElement = Adapt.course.get("_animate")._component._custom._element;
               this.customEffect = Adapt.course.get("_animate")._component._custom._effect;
               $(this.modelID).find('.'+this.customElement).addClass("animated");
               $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
-            } else if (this.model.has("_animate")._custom) {
-              if(this.model.get("_animate")._custom._isEnabled) {
+            }
+            // Check var against component view config
+            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
+              if (this.model.get("_animate")._custom._isEnabled) {
                 this.customEnabled = true;
                 this.customElement = this.model.get("_animate")._custom._element;
                 this.customEffect = this.model.get("_animate")._custom._effect;
@@ -145,7 +140,7 @@ define(function(require) {
                     this._isVisibleBottom = true;
                 }
                 // Check if element come into view on screen
-                if (this._isVisibleTop) {
+                if (this._isVisibleTop || this._isVisibleBottom) {
                   this.animateElements();
                 }
             }
