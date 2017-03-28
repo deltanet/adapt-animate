@@ -23,7 +23,7 @@
                   "type":"boolean",
                   "required":false,
                   "default": false,
-                  "title": "Animate Enabled",
+                  "title": "Is Enabled",
                   "inputType": { "type": "Boolean", "options": [false, true]},
                   "validators": [],
                   "help": "Enables Animate Extension"
@@ -38,7 +38,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate all Title Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -52,7 +52,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Article Title Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -76,7 +76,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Article Body Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -100,7 +100,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Article Instruction Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -124,7 +124,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": false,
-                          "title": "Animate Custom Element Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -159,7 +159,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate all Title Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -173,7 +173,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Block Title Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -197,7 +197,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Block Body Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -221,7 +221,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Block Instruction Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -245,7 +245,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": false,
-                          "title": "Animate Custom Element Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -280,21 +280,21 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate all Title Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
                     "_completeElement": {
                       "type":"object",
                       "required":true,
-                      "title": "Animate Component",
-                      "help": "Animate the component",
+                      "title": "Animate Entire Component",
+                      "help": "Animate the entire component",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate Component Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -318,7 +318,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Component Title Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -342,7 +342,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Component Body Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -366,7 +366,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": true,
-                          "title": "Animate all Component Instruction Text Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -390,7 +390,7 @@
                           "type":"boolean",
                           "required":true,
                           "default": false,
-                          "title": "Animate Custom Element Enabled",
+                          "title": "Is Enabled",
                           "inputType": { "type": "Boolean", "options": [false, true]},
                           "validators": []
                         },
@@ -434,7 +434,7 @@
                   "type":"boolean",
                   "required":false,
                   "default": false,
-                  "title": "Animate Enabled",
+                  "title": "Is Enabled",
                   "inputType": { "type": "Boolean", "options": [false, true]},
                   "validators": [],
                   "help": "Enables Animate Extension"
@@ -449,7 +449,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Article Title Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -473,7 +473,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Article Body Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -497,7 +497,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Article Instruction Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -521,7 +521,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": false,
-                      "title": "Animate Custom Element Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -560,7 +560,7 @@
                   "type":"boolean",
                   "required":false,
                   "default": false,
-                  "title": "Animate Enabled",
+                  "title": "Is Enabled",
                   "inputType": { "type": "Boolean", "options": [false, true]},
                   "validators": [],
                   "help": "Enables Animate Extension"
@@ -575,7 +575,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Block Title Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -599,7 +599,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Block Body Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -623,7 +623,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Block Instruction Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -647,7 +647,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": false,
-                      "title": "Animate Custom Element Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -686,7 +686,7 @@
                   "type":"boolean",
                   "required":false,
                   "default": false,
-                  "title": "Animate Enabled",
+                  "title": "Is Enabled",
                   "inputType": { "type": "Boolean", "options": [false, true]},
                   "validators": [],
                   "help": "Enables Animate Extension"
@@ -694,14 +694,14 @@
                 "_completeElement": {
                   "type":"object",
                   "required":true,
-                  "title": "Animate Component",
-                  "help": "Animate the component",
+                  "title": "Animate Entire Component",
+                  "help": "Animate the entire component",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Component Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -725,7 +725,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Component Title Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -749,7 +749,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Component Body Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -773,7 +773,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": true,
-                      "title": "Animate Component Instruction Text Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
@@ -797,7 +797,7 @@
                       "type":"boolean",
                       "required":true,
                       "default": false,
-                      "title": "Animate Custom Element Enabled",
+                      "title": "Is Enabled",
                       "inputType": { "type": "Boolean", "options": [false, true]},
                       "validators": []
                     },
