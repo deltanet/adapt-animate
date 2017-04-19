@@ -18,7 +18,8 @@ The attributes listed below are properly formatted as JSON in [*example.json*](h
 
 ### Attributes
 
-**Course**
+**Course**  
+
 The Animate attribute group at course level contains values for **_isEnabled**, **_article**, **_block**, and **_component**.
 
 >**_isEnabled** (boolean):  Turns on and off the **Animate** extension. Can be set to disable **Animate** when not required.
@@ -113,9 +114,10 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 
 >>>**_effect** (string):  Defines the CSS animation name. 
 
-<div float align=right><a href="#top">Back to Top</a></div>
+<div float align=right><a href="#top">Back to Top</a></div>  
 
-**Article and Block**
+**Article and Block**  
+
 The Animate attribute group at article and block level contains values for **_isEnabled**, **_title**, **_body**, **_instruction**, and **_custom**.
 
 >**_isEnabled** (boolean):  Turns on and off the **Animate** extension. Can be set to disable **Animate** when not required.
@@ -146,9 +148,10 @@ The Animate attribute group at article and block level contains values for **_is
 
 >>**_effect** (string):  Defines the CSS animation name. 
 
-<div float align=right><a href="#top">Back to Top</a></div>
+<div float align=right><a href="#top">Back to Top</a></div>  
 
-**Component**
+**Component**  
+
 The Animate attribute group at component level contains values for **_isEnabled**, **_completeElement**, **_title**, **_body**, **_instruction**, and **_custom**.
 
 >**_isEnabled** (boolean):  Turns on and off the **Animate** extension. Can be set to disable **Animate** when not required.  
