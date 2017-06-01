@@ -8,7 +8,7 @@ This extension adds CSS animation to Article, Block and Component elements.
 
 This extension must be manually installed.
 
-If **Animate** has been uninstalled from the Adapt authoring tool, it may be reinstalled using the [Plug-in Manager](https://github.com/adaptlearning/adapt_authoring/wiki/Plugin-Manager). 
+If **Animate** has been uninstalled from the Adapt authoring tool, it may be reinstalled using the [Plug-in Manager](https://github.com/adaptlearning/adapt_authoring/wiki/Plugin-Manager).
 
 ## Settings Overview
 
@@ -112,7 +112,7 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 
 >>>**_element** (string):  Defines the div element the animation is applied to.  
 
->>>**_effect** (string):  Defines the CSS animation name. 
+>>>**_effect** (string):  Defines the CSS animation name.
 
 <div float align=right><a href="#top">Back to Top</a></div>  
 
@@ -146,7 +146,7 @@ The Animate attribute group at article and block level contains values for **_is
 
 >>**_element** (string):  Defines the div element the animation is applied to.  
 
->>**_effect** (string):  Defines the CSS animation name. 
+>>**_effect** (string):  Defines the CSS animation name.
 
 <div float align=right><a href="#top">Back to Top</a></div>  
 
@@ -160,7 +160,7 @@ The Animate attribute group at component level contains values for **_isEnabled*
 
 >>**_isEnabled** (boolean):  Turns on and off the **Animate** extension.  
 
->>**_effect** (string):  Defines the CSS animation name. 
+>>**_effect** (string):  Defines the CSS animation name.
 
 >**_title** (object): This `_title` attributes group stores the properties for title animations. It contains values for **_isEnabled**, and **_effect**.  
 
@@ -186,16 +186,16 @@ The Animate attribute group at component level contains values for **_isEnabled*
 
 >>**_element** (string):  Defines the div element the animation is applied to.  
 
->>**_effect** (string):  Defines the CSS animation name. 
+>>**_effect** (string):  Defines the CSS animation name.
 
 <div float align=right><a href="#top">Back to Top</a></div>
 
 ## Limitations
 
-No known limitations. 
+No known limitations.
 
 ----------------------------
-**Version number:**  2.0.2   
+**Version number:**  2.0.3   
 **Framework versions supported:**  ^2.0.0    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-audio/graphs/contributors)     
 **Accessibility support:** Yes  

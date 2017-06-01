@@ -1,8 +1,8 @@
 {
     "name": "adapt-animate",
     "repository": "git://github.com/deltanet/adapt-animate",
+    "version": "2.0.3",
     "framework": "^2.0.1",
-    "version": "2.0.2",
     "homepage": "https://github.com/deltanet/adapt-animate",
     "issues": "https://github.com/deltanet/adapt-animate/issues/",
     "displayName": "Animate",
