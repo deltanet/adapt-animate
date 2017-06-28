@@ -2,7 +2,7 @@
 
 **Animate** is an *extension* for the [Adapt framework](https://github.com/adaptlearning/adapt_framework).   
 
-This extension adds CSS animation to Article, Block and Component elements.  
+This extension adds CSS animation to Article, Block and Component elements. Animatoins available are based on [Animate.css by Daniel Eden](https://daneden.github.io/animate.css/).  
 
 ## Installation
 
