@@ -5,8 +5,6 @@ define(function(require) {
 
     var AnimateBlockView = Backbone.View.extend({
 
-        className: "animate",
-
         initialize: function () {
             this.listenTo(Adapt, 'remove', this.remove);
             this.listenToOnce(Adapt, "remove", this.removeInViewListeners);
@@ -25,7 +23,6 @@ define(function(require) {
             this.bodyEnabled = false;
             this.instructionEnabled = false;
             this.customEnabled = false;
-            $(this.modelID).addClass("animate");
 
             // Title
             // Check for global config first and set var accordingly
