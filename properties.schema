@@ -6,7 +6,7 @@
   "properties":{
     "pluginLocations": {
       "type":"object",
-      "required":true,
+      "required": true,
       "properties":{
         "config": {
           "type":"object"
@@ -16,44 +16,42 @@
           "properties":{
             "_animate": {
               "type":"object",
-              "required":false,
+              "required": false,
               "legend": "Animate",
               "properties":{
                 "_isEnabled": {
                   "type":"boolean",
-                  "required":false,
+                  "required": false,
                   "default": false,
                   "title": "Is Enabled",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Enables Animate Extension"
+                  "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_article": {
                   "type":"object",
-                  "required":true,
+                  "required": true,
                   "title": "Animate Article",
-                  "help": "Animate article elements",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_title": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Article Titles",
-                      "help": "Animate all article titles",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -68,16 +66,15 @@
                     },
                     "_body": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Article Body",
-                      "help": "Animate all article body text",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -92,16 +89,15 @@
                     },
                     "_instruction": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Article Instructions",
-                      "help": "Animate all article instruction text",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -116,26 +112,25 @@
                     },
                     "_custom": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Custom Element",
-                      "help": "Animate a specified element within the article",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
+                          "required": false,
                           "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_element": {
                           "type": "string",
-                          "required": true,
+                          "required": false,
                           "default": "",
                           "title": "Element",
                           "inputType": "Text",
                           "validators": [],
-                          "help": "Specify an element by naming the div class"
+                          "help": "Specify an element by naming the div class."
                         },
                         "_effect": {
                           "type": "string",
@@ -151,30 +146,28 @@
                 },
                 "_block": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Block",
-                  "help": "Animate block elements",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_title": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Block Titles",
-                      "help": "Animate all block titles",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -189,16 +182,15 @@
                     },
                     "_body": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Block Body",
-                      "help": "Animate all block body text",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -213,16 +205,15 @@
                     },
                     "_instruction": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Block Instructions",
-                      "help": "Animate all block instruction text",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -237,26 +228,25 @@
                     },
                     "_custom": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Custom Element",
-                      "help": "Animate a specified element within the block",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
+                          "required": false,
                           "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_element": {
                           "type": "string",
-                          "required": true,
+                          "required": false,
                           "default": "",
                           "title": "Element",
                           "inputType": "Text",
                           "validators": [],
-                          "help": "Specify an element by naming the div class"
+                          "help": "Specify an element by naming the div class."
                         },
                         "_effect": {
                           "type": "string",
@@ -272,30 +262,28 @@
                 },
                 "_component": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Component",
-                  "help": "Animate component elements",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_completeElement": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Entire Component",
-                      "help": "Animate the entire component",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -310,16 +298,15 @@
                     },
                     "_title": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Component Titles",
-                      "help": "Animate all component titles",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -334,16 +321,15 @@
                     },
                     "_body": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Component Body",
-                      "help": "Animate all component body text",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -358,16 +344,15 @@
                     },
                     "_instruction": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Component Instructions",
-                      "help": "Animate all component instruction text",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
-                          "default": true,
+                          "required": false,
+                          "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_effect": {
@@ -382,26 +367,25 @@
                     },
                     "_custom": {
                       "type":"object",
-                      "required":true,
+                      "required": false,
                       "title": "Animate Custom Element",
-                      "help": "Animate a specified element within the component",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
-                          "required":true,
+                          "required": false,
                           "default": false,
                           "title": "Is Enabled",
-                          "inputType": { "type": "Boolean", "options": [false, true]},
+                          "inputType": "Checkbox",
                           "validators": []
                         },
                         "_element": {
                           "type": "string",
-                          "required": true,
+                          "required": false,
                           "default": "",
                           "title": "Element",
                           "inputType": "Text",
                           "validators": [],
-                          "help": "Specify an element by naming the div class"
+                          "help": "Specify an element by naming the div class."
                         },
                         "_effect": {
                           "type": "string",
@@ -427,30 +411,29 @@
           "properties":{
             "_animate": {
               "type":"object",
-              "required":false,
+              "required": false,
               "legend": "Animate",
               "properties":{
                 "_isEnabled": {
                   "type":"boolean",
-                  "required":false,
+                  "required": false,
                   "default": false,
                   "title": "Is Enabled",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Enables Animate Extension"
+                  "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_title": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Article Title",
-                  "help": "Animate the article title",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -465,16 +448,15 @@
                 },
                 "_body": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate the Article Body Text",
-                  "help": "Animate the article body text",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -489,16 +471,15 @@
                 },
                 "_instruction": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Article Instruction Text",
-                  "help": "Animate the article instruction text",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -513,26 +494,25 @@
                 },
                 "_custom": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Custom Element",
-                  "help": "Animate a specified element within the article",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
+                      "required": false,
                       "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_element": {
                       "type": "string",
-                      "required": true,
+                      "required": false,
                       "default": "",
                       "title": "Element",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Specify an element by naming the div class"
+                      "help": "Specify an element by naming the div class."
                     },
                     "_effect": {
                       "type": "string",
@@ -553,30 +533,29 @@
           "properties":{
             "_animate": {
               "type":"object",
-              "required":false,
+              "required": false,
               "legend": "Animate",
               "properties":{
                 "_isEnabled": {
                   "type":"boolean",
-                  "required":false,
+                  "required": false,
                   "default": false,
                   "title": "Is Enabled",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Enables Animate Extension"
+                  "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_title": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Block Title",
-                  "help": "Animate the block title",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -591,16 +570,15 @@
                 },
                 "_body": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate the Block Body Text",
-                  "help": "Animate the block body text",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -615,16 +593,15 @@
                 },
                 "_instruction": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Block Instruction Text",
-                  "help": "Animate the block instruction text",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -639,26 +616,25 @@
                 },
                 "_custom": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Custom Element",
-                  "help": "Animate a specified element within the block",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
+                      "required": false,
                       "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_element": {
                       "type": "string",
-                      "required": true,
+                      "required": false,
                       "default": "",
                       "title": "Element",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Specify an element by naming the div class"
+                      "help": "Specify an element by naming the div class."
                     },
                     "_effect": {
                       "type": "string",
@@ -679,30 +655,29 @@
           "properties":{
             "_animate": {
               "type":"object",
-              "required":false,
+              "required": false,
               "legend": "Animate",
               "properties":{
                 "_isEnabled": {
                   "type":"boolean",
-                  "required":false,
+                  "required": false,
                   "default": false,
                   "title": "Is Enabled",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Enables Animate Extension"
+                  "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_completeElement": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Entire Component",
-                  "help": "Animate the entire component",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -717,16 +692,15 @@
                 },
                 "_title": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Component Title",
-                  "help": "Animate the component title",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -741,16 +715,15 @@
                 },
                 "_body": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate the Component Body Text",
-                  "help": "Animate the component body text",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -765,16 +738,15 @@
                 },
                 "_instruction": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Component Instruction Text",
-                  "help": "Animate the component instruction text",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
-                      "default": true,
+                      "required": false,
+                      "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_effect": {
@@ -789,26 +761,25 @@
                 },
                 "_custom": {
                   "type":"object",
-                  "required":true,
+                  "required": false,
                   "title": "Animate Custom Element",
-                  "help": "Animate a specified element within the component",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
-                      "required":true,
+                      "required": false,
                       "default": false,
                       "title": "Is Enabled",
-                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "inputType": "Checkbox",
                       "validators": []
                     },
                     "_element": {
                       "type": "string",
-                      "required": true,
+                      "required": false,
                       "default": "",
                       "title": "Element",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Specify an element by naming the div class"
+                      "help": "Specify an element by naming the div class."
                     },
                     "_effect": {
                       "type": "string",
