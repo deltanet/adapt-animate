@@ -17,6 +17,7 @@ define([
             this.bodyEnabled = false;
             this.instructionEnabled = false;
             this.customEnabled = false;
+            this.customItems = this.model.get("_animate")._custom._items ? this.model.get("_animate")._custom._items : [];
 
             // Complete element
             // Check for global config first and set var accordingly
@@ -96,8 +97,11 @@ define([
               this.customEnabled = true;
               this.customElement = Adapt.course.get("_animate")._component._custom._element;
               this.customEffect = Adapt.course.get("_animate")._component._custom._effect;
-              $(this.modelID).find('.'+this.customElement).addClass("animated");
-              $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+              // Only apply if an element has been specified
+              if (this.customElement !="") {
+                $(this.modelID).find('.'+this.customElement).addClass("animated");
+                $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+              }
             }
             // Check var against component view config
             if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
@@ -105,8 +109,17 @@ define([
                 this.customEnabled = true;
                 this.customElement = this.model.get("_animate")._custom._element;
                 this.customEffect = this.model.get("_animate")._custom._effect;
-                $(this.modelID).find('.'+this.customElement).addClass("animated");
-                $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+                // Only apply if an element has been specified
+                if (this.customElement !="") {
+                  $(this.modelID).find('.'+this.customElement).addClass("animated");
+                  $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+                }
+                // Custom items
+                if (this.customItems.length == 0) return;
+                for (var i = 0, l = this.customItems.length; i < l; i++) {
+                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("animated");
+                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("element-hidden");
+                }
               }
             }
 
@@ -166,12 +179,27 @@ define([
             }, this), Math.round(instructionDelay * 1000));
           }
           if (this.customEnabled) {
-            var customDelay = this.model.get("_animate")._custom._delay ? this.model.get("_animate")._custom._delay : 0;
-            _.delay(_.bind(function() {
-              $(this.modelID).find('.'+this.customElement).addClass(this.customEffect);
-              $(this.modelID).find('.'+this.customElement).removeClass("element-hidden");
-            }, this), Math.round(customDelay * 1000));
+            // Only apply if an element has been specified
+            if (this.customElement !="") {
+              var customDelay = this.model.get("_animate")._custom._delay ? this.model.get("_animate")._custom._delay : 0;
+              _.delay(_.bind(function() {
+                $(this.modelID).find('.'+this.customElement).addClass(this.customEffect);
+                $(this.modelID).find('.'+this.customElement).removeClass("element-hidden");
+              }, this), Math.round(customDelay * 1000));
+            }
+            // Custom items
+            if (this.customItems.length == 0) return;
+            for (var i = 0, l = this.customItems.length; i < l; i++) {
+              this.animateItem(this.customItems[i]);
+            }
           }
+        },
+
+        animateItem: function (item) {
+          _.delay(_.bind(function() {
+            $(this.modelID).find('.'+item._element).addClass(item._effect);
+            $(this.modelID).find('.'+item._element).removeClass("element-hidden");
+          }, this), Math.round(item._delay * 1000));
         },
 
         removeInViewListeners: function () {

@@ -102,7 +102,24 @@
       "_isEnabled": false,
       "_element": "",
       "_effect": "",
-      "_delay": 0
+      "_delay": 0,
+      "_items": [
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          },
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          },
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          }
+      ]
     }
 },
 
@@ -133,7 +150,24 @@
       "_isEnabled": false,
       "_element": "",
       "_effect": "",
-      "_delay": 0
+      "_delay": 0,
+      "_items": [
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          },
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          },
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          }
+      ]
     }
 },
 
