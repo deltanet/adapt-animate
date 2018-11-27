@@ -31,7 +31,7 @@
                 "_article": {
                   "type":"object",
                   "required": true,
-                  "title": "Animate Article",
+                  "legend": "Article",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -44,7 +44,7 @@
                     "_title": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Article Titles",
+                      "legend": "Title",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -67,7 +67,7 @@
                     "_body": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Article Body",
+                      "legend": "Body",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -90,7 +90,7 @@
                     "_instruction": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Article Instructions",
+                      "legend": "Instruction",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -113,7 +113,7 @@
                     "_custom": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Custom Element",
+                      "legend": "Custom Element",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -147,7 +147,7 @@
                 "_block": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Block",
+                  "legend": "Block",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -160,7 +160,7 @@
                     "_title": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Block Titles",
+                      "legend": "Title",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -183,7 +183,7 @@
                     "_body": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Block Body",
+                      "legend": "Body",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -206,7 +206,7 @@
                     "_instruction": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Block Instructions",
+                      "legend": "Instruction",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -229,7 +229,7 @@
                     "_custom": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Custom Element",
+                      "legend": "Custom",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -263,7 +263,7 @@
                 "_component": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Component",
+                  "legend": "Component",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -276,7 +276,7 @@
                     "_completeElement": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Entire Component",
+                      "legend": "Entire Component",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -299,7 +299,7 @@
                     "_title": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Component Titles",
+                      "legend": "Title",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -322,7 +322,7 @@
                     "_body": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Component Body",
+                      "legend": "Body",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -345,7 +345,7 @@
                     "_instruction": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Component Instructions",
+                      "legend": "Instruction",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -368,7 +368,7 @@
                     "_custom": {
                       "type":"object",
                       "required": false,
-                      "title": "Animate Custom Element",
+                      "legend": "Custom Element",
                       "properties":{
                         "_isEnabled": {
                           "type":"boolean",
@@ -426,7 +426,7 @@
                 "_title": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Article Title",
+                  "legend": "Title",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -449,7 +449,7 @@
                 "_body": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate the Article Body Text",
+                  "legend": "Body",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -472,7 +472,7 @@
                 "_instruction": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Article Instruction Text",
+                  "legend": "Instruction",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -495,7 +495,7 @@
                 "_custom": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Custom Element",
+                  "legend": "Custom Element",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -548,7 +548,7 @@
                 "_title": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Block Title",
+                  "legend": "Title",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -571,7 +571,7 @@
                 "_body": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate the Block Body Text",
+                  "legend": "Body",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -594,7 +594,7 @@
                 "_instruction": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Block Instruction Text",
+                  "legend": "Instruction",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -617,7 +617,7 @@
                 "_custom": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Custom Element",
+                  "legend": "Custom Element",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -670,7 +670,7 @@
                 "_completeElement": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Entire Component",
+                  "legend": "Entire Component",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -693,7 +693,7 @@
                 "_title": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Component Title",
+                  "legend": "Title",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -716,7 +716,7 @@
                 "_body": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate the Component Body Text",
+                  "legend": "Body",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -739,7 +739,7 @@
                 "_instruction": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Component Instruction Text",
+                  "legend": "Instruction",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
@@ -762,7 +762,7 @@
                 "_custom": {
                   "type":"object",
                   "required": false,
-                  "title": "Animate Custom Element",
+                  "legend": "Custom Element",
                   "properties":{
                     "_isEnabled": {
                       "type":"boolean",
