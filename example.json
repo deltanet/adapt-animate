@@ -5,64 +5,77 @@
         "_isEnabled": true,
         "_title": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_body": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_instruction": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_custom": {
             "_isEnabled": false,
             "_element": "",
-            "_effect": ""
+            "_effect": "",
+            "_delay": 0
         }
     },
     "_block": {
         "_isEnabled": true,
         "_title": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_body": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_instruction": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_custom": {
             "_isEnabled": false,
             "_element": "",
-            "_effect": ""
+            "_effect": "",
+            "_delay": 0
         }
     },
     "_component": {
         "_isEnabled": true,
         "_completeElement": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_title": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_body": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_instruction": {
             "_isEnabled": true,
-            "_effect": "fadeIn"
+            "_effect": "fadeIn",
+            "_delay": 0
         },
         "_custom": {
             "_isEnabled": false,
             "_element": "",
-            "_effect": ""
+            "_effect": "",
+            "_delay": 0
         }
     }
 },
@@ -72,20 +85,24 @@
     "_isEnabled": false,
     "_title": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_body": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_instruction": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_custom": {
       "_isEnabled": false,
       "_element": "",
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     }
 },
 
@@ -94,24 +111,29 @@
     "_isEnabled": false,
     "_completeElement": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_title": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_body": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_instruction": {
       "_isEnabled": false,
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     },
     "_custom": {
       "_isEnabled": false,
       "_element": "",
-      "_effect": ""
+      "_effect": "",
+      "_delay": 0
     }
 },
 

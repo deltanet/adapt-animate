@@ -61,6 +61,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -84,6 +93,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -107,6 +125,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -139,6 +166,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     }
@@ -177,6 +213,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -200,6 +245,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -223,6 +277,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -255,6 +318,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     }
@@ -293,6 +365,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -316,6 +397,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -339,6 +429,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -362,6 +461,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     },
@@ -394,6 +502,15 @@
                           "title": "Effect",
                           "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                           "validators": []
+                        },
+                        "_delay": {
+                          "type": "number",
+                          "required": false,
+                          "default": 0,
+                          "title": "Delay",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Enter a number in seconds to delay the animation."
                         }
                       }
                     }
@@ -443,6 +560,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -466,6 +592,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -489,6 +624,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -521,6 +665,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 }
@@ -565,6 +718,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -588,6 +750,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -611,6 +782,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -643,6 +823,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 }
@@ -687,6 +876,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -710,6 +908,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -733,6 +940,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -756,6 +972,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 },
@@ -788,6 +1013,15 @@
                       "title": "Effect",
                       "inputType": {"type": "Select", "options": ["fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "bounceIn", "bounceInUp", "bounceInDown", "bounceInLeft", "bounceInRight", "flipInX", "flipInY", "rollIn", "zoomIn", "flash", "pulse", "rubberBand", "shake", "swing", "jello"]},
                       "validators": []
+                    },
+                    "_delay": {
+                      "type": "number",
+                      "required": false,
+                      "default": 0,
+                      "title": "Delay",
+                      "inputType": "Number",
+                      "validators": ["number"],
+                      "help": "Enter a number in seconds to delay the animation."
                     }
                   }
                 }

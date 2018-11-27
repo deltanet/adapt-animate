@@ -118,21 +118,33 @@ define([
         },
 
         animateElements: function () {
-          if(this.titleEnabled) {
-            $(this.modelID).find(".block-title-inner").addClass(this.titleEffect);
-            $(this.modelID).find(".block-title-inner").removeClass("element-hidden");
+          if (this.titleEnabled) {
+            var titleDelay = this.model.get("_animate")._title._delay ? this.model.get("_animate")._title._delay : 0;
+            _.delay(_.bind(function() {
+              $(this.modelID).find(".block-title-inner").addClass(this.titleEffect);
+              $(this.modelID).find(".block-title-inner").removeClass("element-hidden");
+            }, this), Math.round(titleDelay * 1000));
           }
-          if(this.bodyEnabled) {
-            $(this.modelID).find(".block-body-inner").addClass(this.bodyEffect);
-            $(this.modelID).find(".block-body-inner").removeClass("element-hidden");
+          if (this.bodyEnabled) {
+            var bodyDelay = this.model.get("_animate")._body._delay ? this.model.get("_animate")._body._delay : 0;
+            _.delay(_.bind(function() {
+              $(this.modelID).find(".block-body-inner").addClass(this.bodyEffect);
+              $(this.modelID).find(".block-body-inner").removeClass("element-hidden");
+            }, this), Math.round(bodyDelay * 1000));
           }
-          if(this.instructionEnabled) {
-            $(this.modelID).find(".block-instruction-inner").addClass(this.instructionEffect);
-            $(this.modelID).find(".block-instruction-inner").removeClass("element-hidden");
+          if (this.instructionEnabled) {
+            var instructionDelay = this.model.get("_animate")._instruction._delay ? this.model.get("_animate")._instruction._delay : 0;
+            _.delay(_.bind(function() {
+              $(this.modelID).find(".block-instruction-inner").addClass(this.instructionEffect);
+              $(this.modelID).find(".block-instruction-inner").removeClass("element-hidden");
+            }, this), Math.round(instructionDelay * 1000));
           }
-          if(this.customEnabled) {
-            $(this.modelID).find('.'+this.customElement).addClass(this.customEffect);
-            $(this.modelID).find('.'+this.customElement).removeClass("element-hidden");
+          if (this.customEnabled) {
+            var customDelay = this.model.get("_animate")._custom._delay ? this.model.get("_animate")._custom._delay : 0;
+            _.delay(_.bind(function() {
+              $(this.modelID).find('.'+this.customElement).addClass(this.customEffect);
+              $(this.modelID).find('.'+this.customElement).removeClass("element-hidden");
+            }, this), Math.round(customDelay * 1000));
           }
         },
 
