@@ -1,26 +1,26 @@
 {
-  "type":"object",
+  "type": "object",
   "$schema": "http://json-schema.org/draft-04/schema",
   "id": "http://jsonschema.net",
-  "required":false,
-  "properties":{
+  "required": false,
+  "properties": {
     "pluginLocations": {
-      "type":"object",
+      "type": "object",
       "required": true,
-      "properties":{
+      "properties": {
         "config": {
-          "type":"object"
+          "type": "object"
         },
         "course": {
-          "type":"object",
-          "properties":{
+          "type": "object",
+          "properties": {
             "_animate": {
-              "type":"object",
+              "type": "object",
               "required": false,
               "legend": "Animate",
-              "properties":{
+              "properties": {
                 "_isEnabled": {
-                  "type":"boolean",
+                  "type": "boolean",
                   "required": false,
                   "default": false,
                   "title": "Is Enabled",
@@ -29,12 +29,12 @@
                   "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_article": {
-                  "type":"object",
+                  "type": "object",
                   "required": true,
                   "legend": "Article",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -42,12 +42,12 @@
                       "validators": []
                     },
                     "_title": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Title",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -65,12 +65,12 @@
                       }
                     },
                     "_body": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Body",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -88,12 +88,12 @@
                       }
                     },
                     "_instruction": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Instruction",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -111,12 +111,12 @@
                       }
                     },
                     "_custom": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Custom Element",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -145,12 +145,12 @@
                   }
                 },
                 "_block": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Block",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -158,12 +158,12 @@
                       "validators": []
                     },
                     "_title": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Title",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -181,12 +181,12 @@
                       }
                     },
                     "_body": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Body",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -204,12 +204,12 @@
                       }
                     },
                     "_instruction": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Instruction",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -227,12 +227,12 @@
                       }
                     },
                     "_custom": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Custom",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -261,12 +261,12 @@
                   }
                 },
                 "_component": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Component",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -274,12 +274,12 @@
                       "validators": []
                     },
                     "_completeElement": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Entire Component",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -297,12 +297,12 @@
                       }
                     },
                     "_title": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Title",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -320,12 +320,12 @@
                       }
                     },
                     "_body": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Body",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -343,12 +343,12 @@
                       }
                     },
                     "_instruction": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Instruction",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -366,12 +366,12 @@
                       }
                     },
                     "_custom": {
-                      "type":"object",
+                      "type": "object",
                       "required": false,
                       "legend": "Custom Element",
-                      "properties":{
+                      "properties": {
                         "_isEnabled": {
-                          "type":"boolean",
+                          "type": "boolean",
                           "required": false,
                           "default": false,
                           "title": "Is Enabled",
@@ -404,18 +404,18 @@
           }
         },
         "contentobject": {
-          "type":"object"
+          "type": "object"
         },
         "article": {
-          "type":"object",
-          "properties":{
+          "type": "object",
+          "properties": {
             "_animate": {
-              "type":"object",
+              "type": "object",
               "required": false,
               "legend": "Animate",
-              "properties":{
+              "properties": {
                 "_isEnabled": {
-                  "type":"boolean",
+                  "type": "boolean",
                   "required": false,
                   "default": false,
                   "title": "Is Enabled",
@@ -424,12 +424,12 @@
                   "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_title": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Title",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -447,10 +447,10 @@
                   }
                 },
                 "_body": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Body",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
                       "type":"boolean",
                       "required": false,
@@ -470,12 +470,12 @@
                   }
                 },
                 "_instruction": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Instruction",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -493,12 +493,12 @@
                   }
                 },
                 "_custom": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Custom Element",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -529,15 +529,15 @@
           }
         },
         "block": {
-          "type":"object",
-          "properties":{
+          "type": "object",
+          "properties": {
             "_animate": {
-              "type":"object",
+              "type": "object",
               "required": false,
               "legend": "Animate",
-              "properties":{
+              "properties": {
                 "_isEnabled": {
-                  "type":"boolean",
+                  "type": "boolean",
                   "required": false,
                   "default": false,
                   "title": "Is Enabled",
@@ -546,12 +546,12 @@
                   "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_title": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Title",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -569,12 +569,12 @@
                   }
                 },
                 "_body": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Body",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -592,12 +592,12 @@
                   }
                 },
                 "_instruction": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Instruction",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -615,12 +615,12 @@
                   }
                 },
                 "_custom": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Custom Element",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -651,15 +651,15 @@
           }
         },
         "component": {
-          "type":"object",
-          "properties":{
+          "type": "object",
+          "properties": {
             "_animate": {
-              "type":"object",
+              "type": "object",
               "required": false,
               "legend": "Animate",
-              "properties":{
+              "properties": {
                 "_isEnabled": {
-                  "type":"boolean",
+                  "type": "boolean",
                   "required": false,
                   "default": false,
                   "title": "Is Enabled",
@@ -668,12 +668,12 @@
                   "help": "Controls whether the Animate extension is enabled or disabled."
                 },
                 "_completeElement": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Entire Component",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -691,12 +691,12 @@
                   }
                 },
                 "_title": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Title",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -714,12 +714,12 @@
                   }
                 },
                 "_body": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Body",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -737,12 +737,12 @@
                   }
                 },
                 "_instruction": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Instruction",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
@@ -760,12 +760,12 @@
                   }
                 },
                 "_custom": {
-                  "type":"object",
+                  "type": "object",
                   "required": false,
                   "legend": "Custom Element",
-                  "properties":{
+                  "properties": {
                     "_isEnabled": {
-                      "type":"boolean",
+                      "type": "boolean",
                       "required": false,
                       "default": false,
                       "title": "Is Enabled",
