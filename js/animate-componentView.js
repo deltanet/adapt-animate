@@ -1,20 +1,13 @@
-define(function(require) {
-
-    var Adapt = require('coreJS/adapt');
-    var Backbone = require('backbone');
+define([
+    'coreJS/adapt'
+], function(Adapt) {
 
     var AnimateComponentView = Backbone.View.extend({
 
         initialize: function () {
             this.listenTo(Adapt, 'remove', this.remove);
             this.listenToOnce(Adapt, "remove", this.removeInViewListeners);
-            this.preRender();
             this.render();
-        },
-
-        events: {},
-
-        preRender: function() {
         },
 
         render: function () {
