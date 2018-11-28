@@ -39,7 +39,8 @@
                       "default": false,
                       "title": "Is Enabled",
                       "inputType": "Checkbox",
-                      "validators": []
+                      "validators": [],
+                      "help": "If enabled, the settings specified for each element will be applied to all Articles in the course."
                     },
                     "_title": {
                       "type": "object",
@@ -191,7 +192,8 @@
                       "default": false,
                       "title": "Is Enabled",
                       "inputType": "Checkbox",
-                      "validators": []
+                      "validators": [],
+                      "help": "If enabled, the settings specified for each element will be applied to all Blocks in the course."
                     },
                     "_title": {
                       "type": "object",
@@ -343,7 +345,8 @@
                       "default": false,
                       "title": "Is Enabled",
                       "inputType": "Checkbox",
-                      "validators": []
+                      "validators": [],
+                      "help": "If enabled, the settings specified for each element will be applied to all Components in the course."
                     },
                     "_completeElement": {
                       "type": "object",
@@ -643,7 +646,7 @@
                     "_items": {
                       "type": "array",
                       "required": false,
-                      "title": "Items",
+                      "title": "Custom Items",
                       "items": {
                         "type": "object",
                         "required": false,
@@ -838,7 +841,7 @@
                     "_items": {
                       "type": "array",
                       "required": false,
-                      "title": "Items",
+                      "title": "Custom Items",
                       "items": {
                         "type": "object",
                         "required": false,
@@ -1033,7 +1036,7 @@
                     "_items": {
                       "type": "array",
                       "required": false,
-                      "title": "Items",
+                      "title": "Custom Items",
                       "items": {
                         "type": "object",
                         "required": false,
@@ -1260,7 +1263,7 @@
                     "_items": {
                       "type": "array",
                       "required": false,
-                      "title": "Items",
+                      "title": "Custom Items",
                       "items": {
                         "type": "object",
                         "required": false,
