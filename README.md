@@ -12,7 +12,7 @@ If **Animate** has been uninstalled from the Adapt authoring tool, it may be rei
 
 ## Settings Overview
 
-**Animate** is configured on four levels: course (*course.json*), article (*articles.json*), block (*blocks.json*) and component (*components.json*).
+**Animate** is configured on all levels: course (*course.json*), contentObject (*contentObjects.json*), article (*articles.json*), block (*blocks.json*) and component (*components.json*).
 
 The attributes listed below are properly formatted as JSON in [*example.json*](https://github.com/deltanet/adapt-animate/blob/master/example.json).  
 
@@ -138,6 +138,48 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
+<div float align=right><a href="#top">Back to Top</a></div>
+
+**ContentObject**  
+
+The Animate attribute group at contentObject level contains values for **_isEnabled**, **_title**, **_body**, and **_custom**.
+
+>**_isEnabled** (boolean):  Turns on and off the **Animate** extension. Can be set to disable **Animate** when not required.
+
+>**_title** (object): This `_title` attributes group stores the properties for title animations. It contains values for **_isEnabled**, and **_effect**.  
+
+>>**_isEnabled** (boolean):  Turns on and off the **Animate** extension.  
+
+>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
+>**_body** (object): This `_body` attributes group stores the properties for body text animations. It contains values for **_isEnabled**, and **_effect**.  
+
+>>**_isEnabled** (boolean):  Turns on and off the **Animate** extension.  
+
+>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
+>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, **_delay**, and **_items**.  
+
+>>**_isEnabled** (boolean):  Turns on and off the **Animate** extension on custom elements.  
+
+>>**_element** (string):  Defines the div element the animation is applied to.  
+
+>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
+>>>**_items** (array): Multiple items may be created. It contains values for **_element**, **_effect**, and **_delay**.
+
+>>>>**_element** (string):  Defines the div element the animation is applied to.  
+
+>>>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
 <div float align=right><a href="#top">Back to Top</a></div>  
 
 **Article and Block**  
@@ -253,7 +295,7 @@ The Animate attribute group at component level contains values for **_isEnabled*
 No known limitations.
 
 ----------------------------
-**Version number:**  2.0.6   
+**Version number:**  2.1.0   
 **Framework versions supported:**  ^2.0.0    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-animate/graphs/contributors)     
 **Accessibility support:** Yes  

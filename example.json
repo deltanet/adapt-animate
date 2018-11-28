@@ -80,6 +80,45 @@
     }
 },
 
+// Applied to contentObjects.json
+"_animate": {
+    "_isEnabled": false,
+    "_title": {
+      "_isEnabled": false,
+      "_effect": "",
+      "_delay": 0
+    },
+    "_body": {
+      "_isEnabled": false,
+      "_effect": "",
+      "_delay": 0
+    },
+    "_custom": {
+      "_isEnabled": false,
+      "_element": "",
+      "_effect": "",
+      "_delay": 0,
+      "_items": [
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          },
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          },
+          {
+            "_element": "",
+            "_effect": "",
+            "_delay": 0
+          }
+      ]
+    }
+},
+
+
 // Applied to Articles or Blocks.json
 "_animate": {
     "_isEnabled": false,

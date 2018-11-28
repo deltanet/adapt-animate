@@ -7,7 +7,7 @@ define([
         initialize: function () {
             this.listenTo(Adapt, 'remove', this.remove);
             this.listenToOnce(Adapt, "remove", this.removeInViewListeners);
-            this.render();
+            this.listenToOnce(Adapt, 'pageView:ready', this.render);
         },
 
         render: function () {
@@ -115,10 +115,11 @@ define([
                   $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
                 }
                 // Custom items
-                if (this.customItems.length == 0) return;
-                for (var i = 0, l = this.customItems.length; i < l; i++) {
-                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("animated");
-                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("element-hidden");
+                if (this.customItems.length > 0) {
+                  for (var i = 0, l = this.customItems.length; i < l; i++) {
+                    $(this.modelID).find('.'+this.customItems[i]._element).addClass("animated");
+                    $(this.modelID).find('.'+this.customItems[i]._element).addClass("element-hidden");
+                  }
                 }
               }
             }
