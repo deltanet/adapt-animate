@@ -7,7 +7,7 @@ define([
         initialize: function () {
             this.listenTo(Adapt, 'remove', this.remove);
             this.listenToOnce(Adapt, "remove", this.removeInViewListeners);
-            this.listenToOnce(Adapt, 'pageView:ready', this.render);
+            this.render();
         },
 
         render: function () {
