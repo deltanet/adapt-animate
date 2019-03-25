@@ -5,11 +5,25 @@ define([
     var AnimateMenuView = Backbone.View.extend({
 
         initialize: function () {
-            this.listenTo(Adapt, 'remove', this.remove);
+            this.listenTo(Adapt, {
+              'remove': this.remove,
+              'popup:opened': this.notifyOpened,
+              'popup:closed': this.notifyClosed
+            });
+
             this.listenToOnce(Adapt, 'menuView:ready', this.render);
         },
 
         render: function () {
+            this.firstRun = true;
+            this.notifyIsOpen = false;
+            this.elementIsInView = true;
+
+            // Check if notify is visible
+            if ($('body').children('.notify').css('visibility') == 'visible') {
+              this.notifyOpened();
+            }
+
             this.modelID = '.menu-'+this.model.get('_id');
             this.titleEnabled = false;
             this.bodyEnabled = false;
@@ -63,10 +77,27 @@ define([
         },
 
         postRender: function() {
-          this.animateElements();
+          if (this.notifyIsOpen == false) {
+            this.animateElements();
+          }
+        },
+
+        notifyOpened: function() {
+          this.notifyIsOpen = true;
+        },
+
+        notifyClosed: function() {
+          this.notifyIsOpen = false;
+          if (this.elementIsInView == true && this.firstRun) {
+            _.delay(_.bind(function() {
+              this.animateElements();
+            }, this), 400);
+          }
         },
 
         animateElements: function () {
+          this.firstRun = false;
+
           if (this.titleEnabled) {
             var titleDelay = this.model.get("_animate")._title._delay ? this.model.get("_animate")._title._delay : 0;
             _.delay(_.bind(function() {

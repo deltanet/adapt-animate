@@ -295,7 +295,7 @@ The Animate attribute group at component level contains values for **_isEnabled*
 No known limitations.
 
 ----------------------------
-**Version number:**  2.1.1   
+**Version number:**  2.1.2   
 **Framework versions supported:**  ^2.0.0    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-animate/graphs/contributors)     
 **Accessibility support:** Yes  

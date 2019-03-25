@@ -5,12 +5,27 @@ define([
     var AnimateComponentView = Backbone.View.extend({
 
         initialize: function () {
-            this.listenTo(Adapt, 'remove', this.remove);
             this.listenToOnce(Adapt, "remove", this.removeInViewListeners);
+
+            this.listenTo(Adapt, {
+              'remove': this.remove,
+              'popup:opened': this.notifyOpened,
+              'popup:closed': this.notifyClosed
+            });
+
             this.render();
         },
 
         render: function () {
+            this.firstRun = true;
+            this.notifyIsOpen = false;
+            this.elementIsInView = false;
+
+            // Check if notify is visible
+            if ($('body').children('.notify').css('visibility') == 'visible') {
+              this.notifyOpened();
+            }
+
             this.modelID = '.'+this.model.get('_id');
             this.completeElementEnabled = false;
             this.titleEnabled = false;
@@ -133,6 +148,19 @@ define([
           $(this.modelID).on('inview', _.bind(this.inview, this));
         },
 
+        notifyOpened: function() {
+          this.notifyIsOpen = true;
+        },
+
+        notifyClosed: function() {
+          this.notifyIsOpen = false;
+          if (this.elementIsInView == true && this.firstRun) {
+            _.delay(_.bind(function() {
+              this.animateElements();
+            }, this), 400);
+          }
+        },
+
         inview: function(event, visible, visiblePartX, visiblePartY) {
             if (visible) {
                 if (visiblePartY === 'top') {
@@ -143,14 +171,21 @@ define([
                     this._isVisibleTop = true;
                     this._isVisibleBottom = true;
                 }
-                // Check if element come into view on screen
-                if (this._isVisibleTop || this._isVisibleBottom) {
-                  this.animateElements();
+                // Check if element comes into view
+                if (this._isVisibleTop || this._isVisibleBottom && this.notifyIsOpen == false) {
+                  this.elementIsInView = true;
+                  if (this.notifyIsOpen == false) {
+                    this.animateElements();
+                  }
+                } else {
+                  this.elementIsInView = false;
                 }
             }
         },
 
         animateElements: function () {
+          this.firstRun = false;
+
           if (this.completeElementEnabled) {
             var completeDelay = this.model.get("_animate")._completeElement._delay ? this.model.get("_animate")._completeElement._delay : 0;
             _.delay(_.bind(function() {
