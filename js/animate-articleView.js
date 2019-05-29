@@ -134,6 +134,7 @@ define([
           if (this.elementIsInView == true && this.firstRun) {
             _.delay(_.bind(function() {
               this.animateElements();
+              this.removeInViewListeners();
             }, this), 400);
           }
         },
