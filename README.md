@@ -52,7 +52,7 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
->>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, and **_delay**.  
+>>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, **_delay**, and **_items**.  
 
 >>>**_isEnabled** (boolean):  Turns on and off the **Animate** extension on custom elements within an Article.  
 
@@ -61,6 +61,14 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 >>>**_effect** (string):  Defines the CSS animation name.  
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
+>>>**_items** (array): Multiple items may be created. It contains values for **_element**, **_effect**, and **_delay**.
+
+>>>>**_element** (string):  Defines the div element the animation is applied to.  
+
+>>>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
 >**_block** (object): This `_block` attributes group stores the properties for all Blocks in the course. It contains values for **_isEnabled**, **_title**, **_body**, **_instruction**, and **_custom**.  
 
@@ -90,7 +98,7 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
->>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, and **_delay**.  
+>>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, **_delay**, and **_items**.  
 
 >>>**_isEnabled** (boolean):  Turns on and off the **Animate** extension on custom elements within a Block.  
 
@@ -99,6 +107,14 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 >>>**_effect** (string):  Defines the CSS animation name.  
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
+>>>**_items** (array): Multiple items may be created. It contains values for **_element**, **_effect**, and **_delay**.
+
+>>>>**_element** (string):  Defines the div element the animation is applied to.  
+
+>>>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
 >**_component** (object): This `_component` attributes group stores the properties for all Components in the course. It contains values for **_isEnabled**, **_title**, **_body**, **_instruction**, and **_custom**.  
 
@@ -128,7 +144,7 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
->>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, and **_delay**.  
+>>**_custom** (object): This `_custom` attributes group stores the properties for any custom animations. It contains values for **_isEnabled**, **_element**, **_effect**, **_delay**, and **_items**.  
 
 >>>**_isEnabled** (boolean):  Turns on and off the **Animate** extension on custom elements within a Component.  
 
@@ -137,6 +153,14 @@ The Animate attribute group at course level contains values for **_isEnabled**, 
 >>>**_effect** (string):  Defines the CSS animation name.  
 
 >>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
+
+>>>**_items** (array): Multiple items may be created. It contains values for **_element**, **_effect**, and **_delay**.
+
+>>>>**_element** (string):  Defines the div element the animation is applied to.  
+
+>>>>**_effect** (string):  Defines the CSS animation name.  
+
+>>>>**_delay** (number):  This numeric value represents the delay in seconds before the animation starts.  
 
 <div float align=right><a href="#top">Back to Top</a></div>
 
@@ -295,8 +319,8 @@ The Animate attribute group at component level contains values for **_isEnabled*
 No known limitations.
 
 ----------------------------
-**Version number:**  2.1.2   
-**Framework versions supported:**  ^2.0.0    
+**Version number:**  2.2.0   
+**Framework versions supported:**  2+    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-animate/graphs/contributors)     
 **Accessibility support:** Yes  
 **RTL support:** NA     

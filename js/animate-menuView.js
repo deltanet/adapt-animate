@@ -12,6 +12,7 @@ define([
             });
 
             this.listenToOnce(Adapt, 'menuView:ready', this.render);
+            this.listenTo(Adapt.config, 'change:_activeLanguage', this.remove);
         },
 
         render: function () {
@@ -28,46 +29,44 @@ define([
             this.titleEnabled = false;
             this.bodyEnabled = false;
             this.customEnabled = false;
-            this.customItems = this.model.get("_animate")._custom._items ? this.model.get("_animate")._custom._items : [];
+            this.customItems = [];
 
             // Title
-            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
-              if (this.model.get("_animate")._title._isEnabled) {
-                this.titleEnabled = true;
-                this.titleEffect = this.model.get("_animate")._title._effect;
-                $(this.modelID).find(".menu-title-inner").addClass("animated");
-                $(this.modelID).find(".menu-title-inner").addClass("element-hidden");
-              }
+            if (this.model.get("_animate")._title._isEnabled) {
+              this.titleEnabled = true;
+              this.titleEffect = this.model.get("_animate")._title._effect;
+              $(this.modelID).find(".menu-title-inner").addClass("animated");
+              $(this.modelID).find(".menu-title-inner").addClass("element-hidden");
             }
 
             // Body
-            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
-              if (this.model.get("_animate")._body._isEnabled) {
-                this.bodyEnabled = true;
-                this.bodyEffect = this.model.get("_animate")._body._effect;
-                $(this.modelID).find(".menu-body-inner").addClass("animated");
-                $(this.modelID).find(".menu-body-inner").addClass("element-hidden");
-              }
+            if (this.model.get("_animate")._body._isEnabled) {
+              this.bodyEnabled = true;
+              this.bodyEffect = this.model.get("_animate")._body._effect;
+              $(this.modelID).find(".menu-body-inner").addClass("animated");
+              $(this.modelID).find(".menu-body-inner").addClass("element-hidden");
             }
 
             // Custom
-            if (this.model.has("_animate") && this.model.get("_animate")._isEnabled) {
-              if (this.model.get("_animate")._custom._isEnabled) {
-                this.customEnabled = true;
-                this.customElement = this.model.get("_animate")._custom._element;
-                this.customEffect = this.model.get("_animate")._custom._effect;
-                // Only apply if an element has been specified
-                if (this.customElement !="") {
-                  $(this.modelID).find('.'+this.customElement).addClass("animated");
-                  $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+            if (this.model.get("_animate")._custom._isEnabled) {
+              this.customEnabled = true;
+              this.customElement = this.model.get("_animate")._custom._element;
+              this.customEffect = this.model.get("_animate")._custom._effect;
+              // Only apply if an element has been specified
+              if (this.customElement !="") {
+                $(this.modelID).find('.'+this.customElement).addClass("animated");
+                $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+              }
+              // Custom items
+              if (this.customItems.length > 0) {
+                for (var i = 0, l = this.customItems.length; i < l; i++) {
+                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("animated");
+                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("element-hidden");
                 }
-                // Custom items
-                if (this.customItems.length > 0) {
-                  for (var i = 0, l = this.customItems.length; i < l; i++) {
-                    $(this.modelID).find('.'+this.customItems[i]._element).addClass("animated");
-                    $(this.modelID).find('.'+this.customItems[i]._element).addClass("element-hidden");
-                  }
-                }
+              }
+              // Custom items
+              if (this.model.has("_animate") && this.model.get("_animate")._isEnabled && this.model.get("_animate")._custom._items) {
+                this.customItems = this.model.get("_animate")._custom._items;
               }
             }
 
