@@ -176,6 +176,7 @@ define([
                   this.elementIsInView = true;
                   if (this.notifyIsOpen == false) {
                     this.animateElements();
+                    this.removeInViewListeners();
                   }
                 } else {
                   this.elementIsInView = false;
