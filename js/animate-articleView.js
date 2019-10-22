@@ -7,7 +7,7 @@ define([
         initialize: function () {
             this.listenTo(Adapt, "remove", this.removeInViewListeners);
             this.listenTo(Adapt, 'pageView:ready', this.render);
-            this.listenTo(Adapt, 'animate:notifyClosed', this.notifyClosed);
+            this.listenTo(Adapt, 'popup:closed', this.notifyClosed);
         },
 
         render: function () {
