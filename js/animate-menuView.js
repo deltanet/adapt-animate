@@ -36,7 +36,7 @@ define([
               this.titleEnabled = true;
               this.titleEffect = this.model.get("_animate")._title._effect;
               $(this.modelID).find(".menu-title-inner").addClass("animated");
-              $(this.modelID).find(".menu-title-inner").addClass("element-hidden");
+              $(this.modelID).find(".menu-title-inner").addClass("animate-hidden");
             }
 
             // Body
@@ -44,7 +44,7 @@ define([
               this.bodyEnabled = true;
               this.bodyEffect = this.model.get("_animate")._body._effect;
               $(this.modelID).find(".menu-body-inner").addClass("animated");
-              $(this.modelID).find(".menu-body-inner").addClass("element-hidden");
+              $(this.modelID).find(".menu-body-inner").addClass("animate-hidden");
             }
 
             // Custom
@@ -55,13 +55,13 @@ define([
               // Only apply if an element has been specified
               if (this.customElement !="") {
                 $(this.modelID).find('.'+this.customElement).addClass("animated");
-                $(this.modelID).find('.'+this.customElement).addClass("element-hidden");
+                $(this.modelID).find('.'+this.customElement).addClass("animate-hidden");
               }
               // Custom items
               if (this.customItems.length > 0) {
                 for (var i = 0, l = this.customItems.length; i < l; i++) {
                   $(this.modelID).find('.'+this.customItems[i]._element).addClass("animated");
-                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("element-hidden");
+                  $(this.modelID).find('.'+this.customItems[i]._element).addClass("animate-hidden");
                 }
               }
               // Custom items
@@ -101,7 +101,7 @@ define([
             var titleDelay = this.model.get("_animate")._title._delay ? this.model.get("_animate")._title._delay : 0;
             _.delay(_.bind(function() {
               $(this.modelID).find(".menu-title-inner").addClass(this.titleEffect);
-              $(this.modelID).find(".menu-title-inner").removeClass("element-hidden");
+              $(this.modelID).find(".menu-title-inner").removeClass("animate-hidden");
             }, this), Math.round(titleDelay * 1000));
           }
 
@@ -109,7 +109,7 @@ define([
             var bodyDelay = this.model.get("_animate")._body._delay ? this.model.get("_animate")._body._delay : 0;
             _.delay(_.bind(function() {
               $(this.modelID).find(".menu-body-inner").addClass(this.bodyEffect);
-              $(this.modelID).find(".menu-body-inner").removeClass("element-hidden");
+              $(this.modelID).find(".menu-body-inner").removeClass("animate-hidden");
             }, this), Math.round(bodyDelay * 1000));
           }
 
@@ -119,7 +119,7 @@ define([
               var customDelay = this.model.get("_animate")._custom._delay ? this.model.get("_animate")._custom._delay : 0;
               _.delay(_.bind(function() {
                 $(this.modelID).find('.'+this.customElement).addClass(this.customEffect);
-                $(this.modelID).find('.'+this.customElement).removeClass("element-hidden");
+                $(this.modelID).find('.'+this.customElement).removeClass("animate-hidden");
               }, this), Math.round(customDelay * 1000));
             }
             // Custom items
@@ -133,7 +133,7 @@ define([
         animateItem: function (item) {
           _.delay(_.bind(function() {
             $(this.modelID).find('.'+item._element).addClass(item._effect);
-            $(this.modelID).find('.'+item._element).removeClass("element-hidden");
+            $(this.modelID).find('.'+item._element).removeClass("animate-hidden");
           }, this), Math.round(item._delay * 1000));
         }
 
