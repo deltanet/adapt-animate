@@ -144,6 +144,7 @@ define([
           if (this.completeElementEnabled) {
             $(this.modelID).addClass("animated");
             $(this.modelID).addClass("animate-hidden");
+            this.model.set("_isAnimating", true);
           }
 
           if (this.titleEnabled) {
@@ -215,6 +216,7 @@ define([
             _.delay(_.bind(function() {
               $(this.modelID).addClass(this.completeElementEffect);
               $(this.modelID).removeClass("animate-hidden");
+              this.model.set("_isAnimating", false);
             }, this), Math.round(completeDelay * 1000));
           }
           if (this.titleEnabled) {
