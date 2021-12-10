@@ -33,6 +33,7 @@ export default class AnimateMenuView extends Backbone.View {
     if (this.model.get('_animate')._title._isEnabled) {
       this.titleEnabled = true;
       this.titleEffect = this.model.get('_animate')._title._effect;
+      this.titleDelay = this.model.get('_animate')._title._delay ? this.model.get('_animate')._title._delay : 0;
       $(this.modelID).find('.menu__title-inner').addClass('is-animated');
       $(this.modelID).find('.menu__title-inner').addClass('is-animate-hidden');
     }
@@ -41,6 +42,7 @@ export default class AnimateMenuView extends Backbone.View {
     if (this.model.get('_animate')._body._isEnabled) {
       this.bodyEnabled = true;
       this.bodyEffect = this.model.get('_animate')._body._effect;
+      this.bodyDelay = this.model.get('_animate')._body._delay ? this.model.get('_animate')._body._delay : 0;
       $(this.modelID).find('.menu__body-inner').addClass('is-animated');
       $(this.modelID).find('.menu__body-inner').addClass('is-animate-hidden');
     }
@@ -50,6 +52,7 @@ export default class AnimateMenuView extends Backbone.View {
       this.customEnabled = true;
       this.customElement = this.model.get('_animate')._custom._element;
       this.customEffect = this.model.get('_animate')._custom._effect;
+      this.customDelay = this.model.get('_animate')._custom._delay ? this.model.get('_animate')._custom._delay : 0;
       // Only apply if an element has been specified
       if (this.customElement !='') {
         $(this.modelID).find('.'+this.customElement).addClass('is-animated');
@@ -98,28 +101,25 @@ export default class AnimateMenuView extends Backbone.View {
 
     if (this.titleEnabled) {
       _.delay(() => {
-        let titleDelay = this.model.get('_animate')._title._delay ? this.model.get('_animate')._title._delay : 0;
         $(this.modelID).find('.menu__title-inner').addClass(this.titleEffect);
         $(this.modelID).find('.menu__title-inner').removeClass('is-animate-hidden');
-      }, Math.round(titleDelay * 1000));
+      }, Math.round(this.titleDelay * 1000));
     }
 
     if (this.bodyEnabled) {
       _.delay(() => {
-        let bodyDelay = this.model.get('_animate')._body._delay ? this.model.get('_animate')._body._delay : 0;
         $(this.modelID).find('.menu__body-inner').addClass(this.bodyEffect);
         $(this.modelID).find('.menu__body-inner').removeClass('is-animate-hidden');
-      }, Math.round(bodyDelay * 1000));
+      }, Math.round(this.bodyDelay * 1000));
     }
 
     if (this.customEnabled) {
       // Only apply if an element has been specified
       if (this.customElement !='') {
         _.delay(() => {
-          let customDelay = this.model.get('_animate')._custom._delay ? this.model.get('_animate')._custom._delay : 0;
           $(this.modelID).find('.'+this.customElement).addClass(this.customEffect);
           $(this.modelID).find('.'+this.customElement).removeClass('is-animate-hidden');
-        }, Math.round(customDelay * 1000));
+        }, Math.round(this.customDelay * 1000));
       }
       // Custom items
       if (this.customItems.length == 0) return;
